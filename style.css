@@ -43,3 +43,32 @@ nav ul li a {
 nav ul li a:hover {
     color: #007BFF;
 }
+
+/* Conteneur pour centrer le bouton */
+.centered-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hauteur de la fenêtre pour centrer verticalement */
+    position: fixed; /* Pour que le conteneur reste fixe */
+    top: 0; /* Positionné en haut */
+    left: 0; /* Positionné à gauche */
+    width: 100%; /* Largeur pleine page */
+    pointer-events: none; /* Assure que le bouton n'affecte pas les autres éléments */
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    pointer-events: auto; /* Assure que le bouton est cliquable */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
